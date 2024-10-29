@@ -1,0 +1,217 @@
+body{
+    background-color: #F0F4F8;
+    font-family: "Tiny5", sans-serif;
+    color: #1E6091;
+}
+
+.container{
+    padding-left: 30px;
+}
+
+.nav a, .projects a, h1{
+    text-decoration: none;
+    color: #1E6091;
+    font-weight: 500;
+}
+
+h1{
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 20px;
+    font-size: 50px;
+}
+
+.nav{
+    font-size: 35px;
+    background-color: #c3fcf1;
+}
+
+.nav.link ul li a {
+    color: #1E6091;
+}
+
+.nav.link ul li a:hover {
+    color: #FFA726;
+}
+
+.nav a:hover {
+    color: #FFA726;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 20px;
+    display: inline;
+    color: #56CFE1;
+    padding: 1rem;
+}
+
+.link{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home{
+    padding-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left h1, .left p {
+    display: block;
+    text-align: right;
+    letter-spacing: 5px;
+}
+
+.left p {
+    font-size: smaller;
+    letter-spacing: 2px;
+    line-height: 2px;
+    color: #333333;
+}
+
+hr {
+    border: 1px dashed;
+    color: #333333;
+}
+
+.left span::after, .right span::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.right p {
+    margin-top: 200px;
+    color: #009178;
+    font-size: larger;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: start;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icon a:hover{
+    color: #555050;
+}
+
+svg{
+    height: 25px;
+    width: 25px;
+    margin: 5px 20px;
+}
+
+.projects{
+    background-color: #dadddf4c;
+    padding: 60px 0;
+}
+
+.projects h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card p{
+    color: #1E6091;
+    font-size: larger;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+.projects a{
+    color: #1E6091;
+    display: flex;
+    justify-content: center;
+}
+
+.about h1{
+    text-align: center;
+}
+
+.about{
+    padding: 60px 80px;
+}
+
+.about p{
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Sanchez", serif;;
+}
+
+@media (max-width: 486px) {
+    li{
+        padding: 0px;
+    }
+}
+@media (max-width: 550px) {
+    li{
+        display: none;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    li{
+        padding: 0px;
+    }
+    .left h1, .left p {
+        display: flex;
+        justify-content: center;
+    }
+    .right p {
+        display: inline-block;
+        text-align: center;
+        margin: 0;
+    }
+    .right{
+        display: flex;
+        justify-content: space-around;
+    }
+    .icon {
+        margin: 0;
+    }
+    svg{
+        margin: 50px 10px;
+    }
+    .home{
+        padding-top: 60px;
+    }
+    .right p, .icon{
+        margin-top: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .left h1, .left p {
+        text-align: center;
+    }
+    .home{
+        padding-top: 60px;
+    }
+    .right p{
+        margin-top: 60px;
+    }
+    
+}
