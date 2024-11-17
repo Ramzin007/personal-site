@@ -2,13 +2,10 @@ body {
     background-color: #F0F4F8;
     font-family: 'Roboto', sans-serif;
     color: #1E6091;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 30px;
 }
 
 .nav a, .projects a, h1 {
@@ -18,17 +15,16 @@ body {
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Tiny5", sans-serif;
     font-weight: 400;
     font-style: normal;
     padding-left: 20px;
-    font-size: 5vw; /* Scalable font size */
+    font-size: 50px;
 }
 
 .nav {
-    font-size: 4vw;
+    font-size: 35px;
     background-color: #c3fcf1;
-    padding: 10px;
 }
 
 .nav.link ul li a {
@@ -48,7 +44,7 @@ ul {
 }
 
 li {
-    font-size: 1.2em;
+    font-size: 20px;
     display: inline;
     color: #56CFE1;
     padding: 1rem;
@@ -60,12 +56,12 @@ li {
 }
 
 .home {
-    padding-top: 20vh;
+    padding-top: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin-bottom: 5vh;
+    margin-bottom: 60px;
 }
 
 .photo {
@@ -75,7 +71,7 @@ li {
 
 img {
     border-radius: 50%;
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -87,7 +83,7 @@ img {
 }
 
 .left p {
-    font-size: 1.2em;
+    font-size: smaller;
     letter-spacing: 2px;
     line-height: 2px;
     color: #333333;
@@ -140,7 +136,7 @@ svg {
 
 .card p {
     color: #1E6091;
-    font-size: 1.5em;
+    font-size: larger;
     font-family: "Sanchez", serif;
     font-weight: 400;
     font-style: italic;
@@ -175,97 +171,54 @@ svg {
 
 footer {
     background-color: #c3fcf1;
-    padding: 2% 20%;
+    padding: 1% 35%;
 }
 
-/* Mobile devices (portrait and below) */
-@media (max-width: 768px) {
-    li {
-        font-size: 1em; /* Slightly smaller font size */
-        padding: 10px 0;
-    }
-
-    .home {
-        padding-top: 10vh;
-    }
-
-    .photo img {
-        max-width: 60%; /* More room for image on smaller screens */
-    }
-
-    .left h1 {
-        font-size: 4vw; /* Scalable font size */
-    }
-
-    .right p {
-        font-size: 1.2em;
-        text-align: center;
-        margin-top: 10vh;
-    }
-
-    .icon svg {
-        width: 20px;
-        height: 20px;
-    }
-
-    .nav {
-        font-size: 3.5vw;
-    }
-
-    footer {
-        padding: 5% 10%;
-    }
-}
-
-/* Tablets */
-@media (max-width: 991px) {
-    .home {
-        padding-top: 15vh;
-    }
-
-    .nav {
-        font-size: 3vw;
-    }
-
-    li {
-        font-size: 1.2em;
-        padding: 10px;
-    }
-
-    .photo img {
-        max-width: 50%;
-    }
-
-    footer {
-        padding: 4% 10%;
-    }
-}
-
-/* Small devices (portrait) */
 @media (max-width: 486px) {
     li {
-        font-size: 1em;
-        padding: 5px 0;
+        padding: 0px;
     }
+}
 
-    .home {
-        padding-top: 8vh;
+@media (max-width: 991px) and (min-width: 768px) {
+    li {
+        padding: 0px;
     }
-
-    .photo img {
-        max-width: 70%;
+    .left h1, .left p {
+        display: flex;
+        justify-content: center;
     }
-
-    .left h1 {
-        font-size: 5vw;
-    }
-
     .right p {
-        font-size: 1.1em;
-        margin-top: 5vh;
+        display: inline-block;
+        text-align: center;
+        margin: 0;
     }
+    .right {
+        display: flex;
+        justify-content: space-around;
+    }
+    .icon {
+        margin: 0;
+    }
+    svg {
+        margin: 50px 10px;
+    }
+    .home {
+        padding-top: 60px;
+    }
+    .right p, .icon {
+        margin-top: 60px;
+    }
+}
 
-    footer {
-        padding: 5% 10%;
+@media (max-width: 768px) {
+    .left h1, .left p {
+        text-align: center;
+    }
+    .home {
+        padding-top: 60px;
+    }
+    .right p {
+        margin-top: 60px;
     }
 }
