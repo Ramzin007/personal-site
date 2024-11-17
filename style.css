@@ -100,7 +100,7 @@ hr {
 }
 
 .right p {
-    margin-top: 200px;
+    margin-top: 210px;
     color: #009178;
     font-size: larger;
     font-family: "Sanchez", serif;
@@ -131,7 +131,7 @@ svg {
 
 .projects h1 {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .card p {
@@ -154,7 +154,7 @@ svg {
 }
 
 .about {
-    padding: 60px 80px;
+    padding: 90px 80px;
     background-color: #dadddf4c;
 }
 
@@ -166,7 +166,7 @@ svg {
 
 .skills {
     margin-bottom: 2rem;
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 footer {
@@ -174,16 +174,7 @@ footer {
     padding: 1% 35%;
 }
 
-@media (max-width: 486px) {
-    li {
-        padding: 0px;
-    }
-}
-
 @media (max-width: 991px) and (min-width: 768px) {
-    li {
-        padding: 0px;
-    }
     .left h1, .left p {
         display: flex;
         justify-content: center;
@@ -219,6 +210,6 @@ footer {
         padding-top: 70px;
     }
     .right p {
-        margin-top: 60px;
+        margin-top: 70px;
     }
 }
