@@ -143,6 +143,10 @@ svg {
     text-align: center;
 }
 
+.progress-bar {
+    border-radius: 10px;
+}
+
 .projects a {
     color: #1E6091;
     display: flex;
