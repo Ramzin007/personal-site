@@ -150,8 +150,10 @@ svg {
 .progress-bar {
     border-radius: 10px;
     width: 100%;
-  overflow: hidden;
-  position: relative;
+}
+
+h3{
+    padding-top: 1rem;
 }
 
 .progress {
